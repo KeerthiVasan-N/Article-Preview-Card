@@ -1,0 +1,161 @@
+*,*::after,*::after{
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Manrope",sans-serif;
+    font-size: 1.4rem;
+    background-color: rgb(237,243,247);
+}
+.img img{
+    width: 100%;
+}
+.content{
+    padding:2rem ;
+}
+.card{
+    background-color: white;
+    width: 360px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-inline:2rem ;
+}
+.flex img{
+    width:40px;
+}
+.co img{
+    width: 30px;
+}
+.col{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    margin-right: auto;
+}
+.p{
+    color: rgb(155,159,165);
+    line-height: 2rem;
+}
+.deco{
+    display: none;
+}
+.co{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+     cursor: pointer;
+    justify-content: center;
+    border-radius: 100%;
+
+    background: rgb(237,240,254);
+}
+.col p,.col h3{
+    margin: 0;
+}
+.p{
+    border-radius: 100%;
+}
+.flex{
+    /* display: none; */
+}
+.card,.content{
+    padding: 0;
+
+}
+.oo{
+    display: inline-flex;
+    width:80px;
+    margin-left: 6rem;
+}
+.modal{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(72,86,105) ;
+    color: white;
+    letter-spacing: 10px;
+    width: 100%;
+    display: none;
+
+}
+.conten h2,.content p{
+    margin-inline:2rem ;
+}
+.modal .co img{
+    width: 20px;
+    height: 20px;
+}
+.modal .co {
+    width: 30px;
+    height: 30px;
+}
+h2{
+margin-inline:2rem ;
+}
+
+
+
+
+@media screen and (min-width:764px) {
+    .card{
+       display: grid;
+       width: 700px;
+       margin: 6rem auto;
+       grid-template-columns: 200px 500px;
+    }   
+    .img img{
+       height: 100%;
+       object-fit: cover;
+    }
+    .oo{
+        display: none;
+    }
+    .modal{
+        position: absolute;
+        display: none;
+        max-width: 200px;
+        border-radius:12px;
+        word-spacing: 0px;
+       font-size: 1rem;
+       top:8rem;
+       right: 0rem;
+
+    }
+    .content{
+        position: relative;
+    }
+    .modal img{
+        width:14px;
+    }
+    .deco{
+        display: block;
+        width: 10px;
+        position: absolute;
+        rotate: -45deg;
+        /* padding: 2rem; */
+        height: 10px;
+        right: 90px;
+        bottom: -8px;
+
+        border:10px solid rgb(72,86,105)  ;
+    }
+   } 
+
+
+
+
